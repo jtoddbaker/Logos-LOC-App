@@ -14,6 +14,9 @@ import {
   View
 } from 'react-native';
 // Import Picker for select dropdowns. Install it if you haven't: npx expo install @react-native-picker/picker
+export const metadata = {
+  title: 'Recommended Protocol',
+};
 
 // Helper function to calculate age from DOB
 function calculateAge(dob) {
@@ -277,7 +280,6 @@ const exportToPDF = async () => {
   return (
     // ScrollView allows content to be scrollable on small screens
     <>
-    <title>Recommended Protocol</title>
 
     <ScrollView style={styles.container}>
       <View style={styles.card}>
