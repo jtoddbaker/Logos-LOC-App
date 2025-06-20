@@ -280,7 +280,7 @@ const exportToPDF = async () => {
     <ScrollView style={styles.container}>
       <View style={styles.card}>
         <Image
-          source={require('assets/images/Logos-Logo.png')} // Adjust path if needed
+          source={require('../assets/images/Logos-Logo.png')} // Adjust path if needed
           style={styles.logo}
         />
 
