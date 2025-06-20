@@ -17,7 +17,7 @@ import {
 // Import Picker for select dropdowns. Install it if you haven't: npx expo install @react-native-picker/picker
 
 // Helper function to calculate age from DOB
-const calculateAge = (dob) => {
+function calculateAge(dob) {
   if (!dob) return '';
   const birthDate = new Date(dob);
   const today = new Date();
@@ -27,7 +27,7 @@ const calculateAge = (dob) => {
     age--;
   }
   return age;
-};
+}
 
 // Print component
 async function exportToPDF() {
@@ -277,6 +277,9 @@ const exportToPDF = async () => {
 
   return (
     // ScrollView allows content to be scrollable on small screens
+    <>
+    <title>Recommended Protocol</title>
+
     <ScrollView style={styles.container}>
       <View style={styles.card}>
         <Image
@@ -455,6 +458,7 @@ const exportToPDF = async () => {
 
 
     </ScrollView>
+  </>
   );
 };
 
