@@ -1,8 +1,7 @@
-import RadioButtonGroup from '../components/RadioButtonGroup';
-
 import * as Print from 'expo-print';
 import * as Sharing from 'expo-sharing';
 import { Image } from 'react-native';
+import RadioButtonGroup from '../components/RadioButtonGroup';
 
 import React, { useCallback, useEffect, useState } from 'react';
 import {
